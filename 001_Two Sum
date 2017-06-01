@@ -7,11 +7,11 @@ class Solution {
               if(nums[i]+nums[j]==target){
                 array[0]=i
                 array[1]=j
-                break
+                return array
                   
               }
             }
         }
-        return array;
+        return array
     }
 }
