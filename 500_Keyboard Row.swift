@@ -4,7 +4,7 @@ class Solution {
         let secondRow = ["a", "s", "d", "f", "g", "h", "j", "k", "l"]
         let thirdRow = ["z", "x", "c", "v", "b", "n", "m"]
         var result = [String]()
-        var currentRow=0;
+        var currentRow=0
         var prevRow=0
         var flag=false
         for word in words{
@@ -31,9 +31,7 @@ class Solution {
                     flag=false
                     break
                 }
-                else{
-                    prevRow=currentRow
-                }
+               
                 flag=true
                 
             }
