@@ -13,13 +13,7 @@ class Solution {
         }
         else
         {
-            if(m > 0){
-                return x*temp*temp
-            }
-            else{
-                return (temp*temp)/x
-            }
-            
+            return m>0 ? temp*temp*x : (temp*temp)/x
         }
         
     }
