@@ -27,8 +27,8 @@ class Solution {
             k = k + root!.left!.val
         }
         
-        sumOfLeftLeaves(root!.left)
-        sumOfLeftLeaves(root!.right)
+        helper(root!.left)
+        helper(root!.right)
     }
     
 }
