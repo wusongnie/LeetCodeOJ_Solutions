@@ -1,17 +1,17 @@
 class Solution {
     func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
-        var array=[0,0]
-        for i in 0..<nums.count {
-            
-            for j in i+1..<nums.count{
-              if(nums[i]+nums[j]==target){
-                array[0]=i
-                array[1]=j
-                return array
-                  
-              }
+        var dic = [Int:Int]()
+        for i in 0...nums.count-1{
+               dic[nums[i]] = i
+        }
+        var ans = [Int]()
+        for i in 0...nums.count - 1{
+            if (dic[target-nums[i]] != nil && dic[target-nums[i]] != i){
+                ans.append (i)
+                ans.append (dic[target-nums[i]]!)
+                break
             }
         }
-        return array
+        return ans
     }
 }
