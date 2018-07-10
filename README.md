@@ -1,3 +1,4 @@
 # LeetCodeOJ_Solutions
-solving leetcode problems in Swift to practice the grammer and usage
+-------
+Language: Java, C++, swift
 -----
